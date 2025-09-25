@@ -1,0 +1,20 @@
+.button-div-home-page {
+    display: flex;
+    padding: 20px;
+    margin: 2rem;
+    justify-content: space-between;
+    width: 20%;
+    justify-self: center;
+    min-width: 250px;
+}
+
+.home-page-link-element {
+    padding: 10px;
+    color: white;
+    background-color: #171616;
+    border-radius: 5px;
+}
+
+.home-page-notes-div {
+    background-color: #253039;
+}

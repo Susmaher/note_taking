@@ -1,0 +1,81 @@
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using note_backend.Entities;
+using note_backend.Models;
+using note_backend.Services;
+
+namespace note_backend.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthController(IAuthService authService) : ControllerBase
+    {
+        [HttpPost("register")]
+        public async Task<ActionResult<User>> Register(UserDto request)
+        {
+            var user = await authService.RegisterAsync(request);
+            if (user is null)
+            {
+                return BadRequest("User already exists");
+            }
+
+            return Ok(user);
+        }
+
+
+        [HttpPost("login")]
+        public async Task<ActionResult<TokenResponseDto>> Login(UserDto request)
+        {
+              var token = await authService.LoginAsync(request);
+              if (token is null)
+              {
+                    return Unauthorized("Invalid username or password");
+              }
+
+
+              return Ok(token);
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<ActionResult<TokenResponseDto>> RefreshToken(RefreshTokenRequestDto request)
+        {
+            var results = await authService.RefreshTokensAsync(request);
+            if (results is null || results.AccessToken is null || results.RefreshToken is null)
+            {
+                return Unauthorized("Invalid refresh token");
+            }
+
+            return Ok(results);
+        }
+
+        [HttpPost("notes")]
+        public async Task<ActionResult<Notes>> SaveNote(NoteDto request)
+        {
+            var results = await authService.NotesAsync(request);
+            return Ok(results);
+        }
+
+        [HttpGet("notes-get")]
+        public async Task<ActionResult<List<Notes>>> GetNotes()
+        {
+            var results = await authService.GetNotesAsync();
+            return Ok(results);
+        }
+
+        [Authorize]
+        [HttpGet("verify")]
+        public IActionResult Verify() 
+        {
+            return Ok("You are authenticated");
+        }
+    }
+
+
+}
