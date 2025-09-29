@@ -14,3 +14,11 @@
 .navbar_element {
     color: white;
 }
+
+.sign_container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    background-color: #111111;
+}

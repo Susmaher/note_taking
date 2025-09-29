@@ -31,6 +31,7 @@ function Sign_up(): JSX.Element {
 
     return (
         <>
+            <h1>SIGN UP</h1>
             <div className="form-block">
                 <form className="input-area" onSubmit={handleSubmit(onSubmit)}>
                     <div className="input-field">

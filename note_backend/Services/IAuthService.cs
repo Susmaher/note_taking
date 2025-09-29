@@ -8,8 +8,5 @@ namespace note_backend.Services
         Task<User?> RegisterAsync(UserDto request);
         Task<TokenResponseDto?> LoginAsync(UserDto request);
         Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto request);
-
-        Task<Notes?> NotesAsync(NoteDto request);
-        Task<List<Notes>> GetNotesAsync();
     }
 }

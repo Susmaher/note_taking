@@ -2,6 +2,7 @@
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -11,8 +12,10 @@ using note_backend.Models;
 
 namespace note_backend.Services
 {
-    public class AuthService(UserDbContext context, IConfiguration configuration) : IAuthService
+    public class AuthService(UserDbContext context, IConfiguration configuration, IHttpContextAccessor httpContextAccessor) : IAuthService
     {
+        private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
+
         public async Task<TokenResponseDto?> LoginAsync(UserDto request)
         {
             var user = await context.Users.FirstOrDefaultAsync(u => u.UserName == request.UserName);
@@ -58,23 +61,9 @@ namespace note_backend.Services
             return user;
         }
 
-        public async Task<Notes?> NotesAsync(NoteDto request)
-        {
-            var note = new Notes
-            {
-                Title = request.Title,
-                Content = request.Content
-            };
-
-            context.Notess.Add(note);
-            await context.SaveChangesAsync();
-
-            return note;
-        }
-
         public async Task<TokenResponseDto?> RefreshTokensAsync(RefreshTokenRequestDto request)
         {
-            var user = await ValidateRefreshTokenAsync(request.UserId, request.RefreshToken);
+            var user = await ValidateRefreshTokenAsync();
             if(user is null)
             {
                 return null;
@@ -83,9 +72,16 @@ namespace note_backend.Services
             return await CreateTokenResponse(user);
         }
 
-        private async Task<User?> ValidateRefreshTokenAsync(Guid userId, string refreshToken)
+        private async Task<User?> ValidateRefreshTokenAsync()
         {
-            var user = await context.Users.FindAsync(userId);
+            var refreshToken = _httpContextAccessor.HttpContext?.Request.Cookies["refreshToken"];
+
+            if (string.IsNullOrEmpty(refreshToken))
+            {
+                return null;
+            }
+
+            var user = await context.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken); ;
             if(user is null || user.RefreshToken != refreshToken || user.RefresTokenExpiryTime <= DateTime.UtcNow)
             {
                 return null;
@@ -132,11 +128,6 @@ namespace note_backend.Services
                 );
 
             return new JwtSecurityTokenHandler().WriteToken(tokenDescriptor);
-        }
-
-        public async Task<List<Notes>> GetNotesAsync()
-        {
-            return await context.Notess.ToListAsync();
         }
     }
 }

@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useCallback, useEffect, useRef, useState, type JSX } from "react";
 import api from "../ts/api";
 import { AuthContext } from "./AuthContext";
 
@@ -9,10 +9,12 @@ interface Props {
 export const AuthProvider = ({ children }: Props) => {
     const [isAuthorized, setIsAuthorized] = useState(false);
     const [loading, setLoading] = useState(true);
+    const effectRan = useRef(false);
 
-    const verifyAuth = async () => {
+    const verifyAuth = useCallback(async () => {
+        setLoading(true);
         try {
-            const response = await api.post("/api/Auth/login/");
+            const response = await api.get("/api/Auth/verify");
             setIsAuthorized(response.status === 200);
         } catch {
             try {
@@ -24,7 +26,17 @@ export const AuthProvider = ({ children }: Props) => {
         } finally {
             setLoading(false);
         }
-    };
+    }, []);
+
+    useEffect(() => {
+        if (effectRan.current === false) {
+            verifyAuth();
+
+            return () => {
+                effectRan.current = true;
+            };
+        }
+    }, [verifyAuth]);
 
     const value = {
         isAuthorized,

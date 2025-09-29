@@ -7,44 +7,56 @@
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\entities\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:entities\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\notecreateandsavedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\notecreateandsavedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:context\\userdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\note_backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -63,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:models\\tokenresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\migrations\\20250922090519_refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:migrations\\20250922090519_refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -81,6 +89,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\migrations\\20250923080840_note_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:migrations\\20250923080840_note_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|c:\\users\\trolt\\desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\migrations\\20250929065156_notes-public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594B936B-FB17-4F77-BDAB-87CB3D80092D}|note_backend.csproj|solutionrelative:migrations\\20250929065156_notes-public.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,8 +102,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoteCreateAndSaveDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteCreateAndSaveDto.cs",
+              "RelativeDocumentMoniker": "Models\\NoteCreateAndSaveDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteCreateAndSaveDto.cs",
+              "RelativeToolTip": "Models\\NoteCreateAndSaveDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T11:20:45.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NotesController.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Controllers\\NotesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotesController.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Controllers\\NotesController.cs",
+              "RelativeToolTip": "Controllers\\NotesController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAawJoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T06:46:53.556Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -100,197 +137,26 @@
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAD4v0gAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-21T17:28:28.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NoteDto.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteDto.cs",
-              "RelativeDocumentMoniker": "Models\\NoteDto.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteDto.cs",
-              "RelativeToolTip": "Models\\NoteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T07:21:27.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\AuthService.cs",
               "RelativeToolTip": "Services\\AuthService.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwD8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:44:09.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Notes.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\Notes.cs",
-              "RelativeDocumentMoniker": "Entities\\Notes.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\Notes.cs",
-              "RelativeToolTip": "Entities\\Notes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T06:21:22.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T17:35:06.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\IAuthService.cs",
-              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\IAuthService.cs",
-              "RelativeToolTip": "Services\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T07:43:58.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "Entities\\User.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\User.cs",
-              "RelativeToolTip": "Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T15:45:13.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20250923080840_note_remove.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250923080840_note_remove.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250923080840_note_remove.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250923080840_note_remove.cs",
-              "RelativeToolTip": "Migrations\\20250923080840_note_remove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T08:08:40.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RefreshTokenRequestDto.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RefreshTokenRequestDto.cs",
-              "RelativeDocumentMoniker": "Models\\RefreshTokenRequestDto.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RefreshTokenRequestDto.cs",
-              "RelativeToolTip": "Models\\RefreshTokenRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T09:13:51.396Z"
+              "WhenOpened": "2025-09-22T07:44:09.089Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Models\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\LoginDto.cs",
-              "RelativeToolTip": "Models\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T06:08:16.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Context\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "Context\\UserDbContext.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Context\\UserDbContext.cs",
-              "RelativeToolTip": "Context\\UserDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T06:57:56.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\UserDto.cs",
-              "RelativeDocumentMoniker": "Models\\UserDto.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\UserDto.cs",
-              "RelativeToolTip": "Models\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T17:26:42.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "note_backend.csproj",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\note_backend.csproj",
-              "RelativeDocumentMoniker": "note_backend.csproj",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\note_backend.csproj",
-              "RelativeToolTip": "note_backend.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-22T07:09:34.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-21T17:29:12.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-21T17:29:11.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Models\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RegisterDto.cs",
-              "RelativeToolTip": "Models\\RegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-23T06:11:21.034Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "TokenResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\TokenResponseDto.cs",
               "RelativeDocumentMoniker": "Models\\TokenResponseDto.cs",
@@ -302,7 +168,190 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T17:35:06.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NoteDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteDto.cs",
+              "RelativeDocumentMoniker": "Models\\NoteDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\NoteDto.cs",
+              "RelativeToolTip": "Models\\NoteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T07:21:27.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Notes.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\Notes.cs",
+              "RelativeDocumentMoniker": "Entities\\Notes.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\Notes.cs",
+              "RelativeToolTip": "Entities\\Notes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T06:21:22.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T15:45:13.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20250929065156_Notes-Public.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250929065156_Notes-Public.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250929065156_Notes-Public.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250929065156_Notes-Public.cs",
+              "RelativeToolTip": "Migrations\\20250929065156_Notes-Public.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T06:51:56.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T07:43:58.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Models\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\LoginDto.cs",
+              "RelativeToolTip": "Models\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T06:08:16.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "Models\\UserDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\UserDto.cs",
+              "RelativeToolTip": "Models\\UserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T17:26:42.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250923080840_note_remove.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250923080840_note_remove.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250923080840_note_remove.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250923080840_note_remove.cs",
+              "RelativeToolTip": "Migrations\\20250923080840_note_remove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T08:08:40.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "Models\\RefreshTokenRequestDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "Models\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T09:13:51.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Context\\UserDbContext.cs",
+              "RelativeDocumentMoniker": "Context\\UserDbContext.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Context\\UserDbContext.cs",
+              "RelativeToolTip": "Context\\UserDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T06:57:56.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "note_backend.csproj",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\note_backend.csproj",
+              "RelativeDocumentMoniker": "note_backend.csproj",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\note_backend.csproj",
+              "RelativeToolTip": "note_backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-22T07:09:34.445Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T17:29:12.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T17:29:11.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterDto.cs",
+              "ToolTip": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Models\\RegisterDto.cs",
+              "RelativeToolTip": "Models\\RegisterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T06:11:21.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "20250922090519_RefreshToken.cs",
               "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250922090519_RefreshToken.cs",
               "RelativeDocumentMoniker": "Migrations\\20250922090519_RefreshToken.cs",
@@ -314,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "20250922085934_AddUserRole.cs",
               "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250922085934_AddUserRole.cs",
               "RelativeDocumentMoniker": "Migrations\\20250922085934_AddUserRole.cs",
@@ -326,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "20250922073852_AddUser.cs",
               "DocumentMoniker": "C:\\Users\\trolt\\Desktop\\programoz\u00E1s\\2_ev\\react_projects\\szs_project\\note_backend\\Migrations\\20250922073852_AddUser.cs",
               "RelativeDocumentMoniker": "Migrations\\20250922073852_AddUser.cs",

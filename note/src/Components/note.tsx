@@ -147,27 +147,34 @@ const LeafElement = ({ attributes, children, leaf }: RenderLeafProps) => {
 
 interface NoteProps {
     initial?: string;
+    id: string;
+    isPublic: string;
+    onAction?: () => void;
 }
 
-function Note({ initial }: NoteProps): JSX.Element {
+function Note(props: NoteProps): JSX.Element {
     const editor = useMemo(() => withHistory(withReact(createEditor())), []);
 
-    const initialValue = useMemo(
-        () =>
-            JSON.parse(
-                initial ??
-                    localStorage.getItem("content") ??
-                    JSON.stringify([
-                        {
-                            type: "paragraph",
-                            children: [
-                                { text: "A line of text in a paragraph." },
-                            ],
-                        },
-                    ])
-            ),
-        [initial]
-    );
+    const initialValue = useMemo(() => {
+        const defaultValue = [
+            {
+                type: "paragraph",
+                children: [{ text: "A line of text in a paragraph." }],
+            },
+        ];
+
+        if (!props.initial) {
+            return defaultValue;
+        }
+
+        try {
+            return JSON.parse(props.initial);
+        } catch (error) {
+            console.error("Failed to parse initial content:", error);
+            console.log("Raw initial content:", props.initial);
+            return defaultValue;
+        }
+    }, [props.initial]);
 
     const renderElement = useCallback((props: RenderElementProps) => {
         return <Element {...props} />;
@@ -179,13 +186,48 @@ function Note({ initial }: NoteProps): JSX.Element {
 
     const [content, SetContent] = useState("");
 
-    const handleSave = async () => {
+    const handleAddNote = async () => {
         try {
-            const res = api.post("api/Auth/notes/", {
+            const res = await api.post("api/Notes/save-note", {
                 title: new Date().toISOString(),
                 content: content,
+                isPublic: checked,
             });
             console.log(res);
+
+            if (props.onAction) {
+                props.onAction(); // Trigger rerender in parent
+            }
+        } catch {
+            console.log("Something went wrong");
+        }
+    };
+
+    const [checked, setChecked] = useState(false);
+
+    const handleSave = async () => {
+        try {
+            const res = await api.put(`api/Notes/edit-note/${props.id}`, {
+                title: new Date().toISOString(),
+                content: content,
+                isPublic: checked,
+            });
+            console.log(res);
+            if (props.onAction) {
+                props.onAction(); // Trigger rerender in parent
+            }
+        } catch {
+            console.log("Something went wrong");
+        }
+    };
+
+    const deleteNote = async () => {
+        try {
+            const res = await api.delete(`api/Notes/delete/${props.id}`);
+            console.log(res);
+            if (props.onAction) {
+                props.onAction(); // Trigger rerender in parent
+            }
         } catch {
             console.log("Something went wrong");
         }
@@ -207,25 +249,29 @@ function Note({ initial }: NoteProps): JSX.Element {
                     }
                 }}
             >
-                <div>
-                    <MarkButton format="bold" icon="B" />
-                    <MarkButton format="italic" icon="I" />
-                    <MarkButton format="underline" icon="U" />
-                    <MarkButton format="code" icon="code" />
-                    <BlockButton format="heading-one" icon="H1" />
-                    <BlockButton format="heading-two" icon="H2" />
-                    <BlockButton format="block-quote" icon="quote" />
-                    <BlockButton format="numbered-list" icon="o. list" />
-                    <BlockButton format="bulleted-list" icon="u. list" />
-                    <BlockButton format="left" icon="a. left" />
-                    <BlockButton format="center" icon="a. center" />
-                    <BlockButton format="right" icon="a. right" />
-                    <BlockButton format="justify" icon="a. justify" />
-                </div>
+                {props.isPublic == "false" && (
+                    <div>
+                        <MarkButton format="bold" icon="B" />
+                        <MarkButton format="italic" icon="I" />
+                        <MarkButton format="underline" icon="U" />
+                        <MarkButton format="code" icon="code" />
+                        <BlockButton format="heading-one" icon="H1" />
+                        <BlockButton format="heading-two" icon="H2" />
+                        <BlockButton format="block-quote" icon="quote" />
+                        <BlockButton format="numbered-list" icon="o. list" />
+                        <BlockButton format="bulleted-list" icon="u. list" />
+                        <BlockButton format="left" icon="a. left" />
+                        <BlockButton format="center" icon="a. center" />
+                        <BlockButton format="right" icon="a. right" />
+                        <BlockButton format="justify" icon="a. justify" />
+                    </div>
+                )}
+
                 <Editable
                     style={{ padding: 10 }}
                     renderElement={renderElement}
                     renderLeaf={renderLeaf}
+                    readOnly={props.isPublic == "false" ? false : true}
                     onKeyDown={(event) => {
                         if (!event.ctrlKey) {
                             return;
@@ -241,9 +287,29 @@ function Note({ initial }: NoteProps): JSX.Element {
                     }}
                 />
             </Slate>
-            <button onClick={handleSave}>Save</button>
+            {props.isPublic != "true" && (
+                <div>
+                    <label>
+                        <input
+                            type="checkbox"
+                            checked={checked}
+                            onChange={() => setChecked(!checked)}
+                        />
+                        Public note
+                    </label>
+                    <br />
+                    {props.id == "" ? (
+                        <button onClick={handleAddNote}>Add note</button>
+                    ) : (
+                        <button onClick={handleSave}>Save</button>
+                    )}
+                    <button onClick={deleteNote}>Delete</button>
+                </div>
+            )}
         </>
     );
 }
 
 export default Note;
+
+//01997095-028e-7890-8991-7565e1517c94

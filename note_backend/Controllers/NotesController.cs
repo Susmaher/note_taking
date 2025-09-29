@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using note_backend.Context;
+using note_backend.Entities;
+using note_backend.Migrations;
+using note_backend.Models;
+
+namespace note_backend.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class NotesController : ControllerBase
+    {
+        private readonly UserDbContext _context;
+
+        public NotesController(UserDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/Notes
+        [HttpGet("public-notes")]
+        public async Task<ActionResult<IEnumerable<Notes>>> GetNotess()
+        {
+            return await _context.Notess.Where(x => x.isPublic == true).ToListAsync();
+        }
+
+        [Authorize]
+        [HttpGet("private-notes")]
+        public async Task<ActionResult<IEnumerable<Notes>>> GetPrivateNotess()
+        {
+            var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!Guid.TryParse(userIdString, out var userId))
+            {
+                return Unauthorized();
+            }
+
+            return await _context.Notess.Where(x => x.UserId == userId).ToListAsync();
+        }
+
+        // GET: api/Notes/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Notes>> GetNotes(Guid id)
+        {
+            var notes = await _context.Notess.FindAsync(id);
+
+            if (notes == null)
+            {
+                return NotFound();
+            }
+
+            return notes;
+        }
+
+        // PUT: api/Notes/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
+        [HttpPut("edit-note/{id}")]
+        public async Task<IActionResult> PutNotes(Guid id, NoteCreateAndSaveDto notes)
+        {
+            var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!Guid.TryParse(userIdString, out var userId))
+            {
+                return Unauthorized();
+            }
+
+            var noteToUpdate = await _context.Notess.FirstOrDefaultAsync(n => n.Id == id);
+
+            if (noteToUpdate == null)
+            {
+                return NotFound();
+            }
+
+            if (noteToUpdate.UserId != userId)
+            {
+                return Forbid(); 
+            }
+
+            noteToUpdate.Title = notes.Title;
+            noteToUpdate.Content = notes.Content;
+            noteToUpdate.isPublic = notes.IsPublic;
+
+            _context.Entry(noteToUpdate).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!NotesExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // POST: api/Notes
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
+        [HttpPost("save-note")]
+        public async Task<ActionResult<Notes>> PostNotes(NoteCreateAndSaveDto noteDto)
+        {
+            var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!Guid.TryParse(userIdString, out var userId))
+            {
+                return Unauthorized();
+            }
+
+            var note = new Notes
+            {
+                Title = noteDto.Title,
+                Content = noteDto.Content,
+                isPublic = noteDto.IsPublic,
+                UserId = userId
+            };
+
+            _context.Notess.Add(note);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetNotes", new { id = note.Id }, note);
+
+        }
+
+        // DELETE: api/Notes/5
+        [Authorize]
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> DeleteNotes(Guid id)
+        {
+            var notes = await _context.Notess.FindAsync(id);
+            if (notes == null)
+            {
+                return NotFound();
+            }
+
+            _context.Notess.Remove(notes);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool NotesExists(Guid id)
+        {
+            return _context.Notess.Any(e => e.Id == id);
+        }
+    }
+}

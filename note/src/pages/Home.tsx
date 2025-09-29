@@ -3,14 +3,19 @@ import Note from "../Components/note";
 import { Link } from "react-router-dom";
 import "../css/home.css";
 import api from "../ts/api";
+import { useAuth } from "../context/UseAuth";
 
 interface NoteData {
     content: string;
     id: string;
     title: string;
+    isPublic: string;
 }
 
 function Home(): JSX.Element {
+    const auth = useAuth();
+    const { isAuthorized, verifyAuth } = auth;
+
     const [noteList, setNoteList] = useState<NoteData[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -18,10 +23,8 @@ function Home(): JSX.Element {
     const fetchNotes = async () => {
         try {
             setLoading(true);
-            const response = await api.get("/api/Auth/notes-get");
+            const response = await api.get("/api/Notes/public-notes");
             console.log("API response:", response.data);
-
-            // Based on your attachment, the data seems to be directly an array
             const notesData = response.data || [];
             setNoteList(notesData);
             setError(null);
@@ -50,14 +53,27 @@ function Home(): JSX.Element {
                     public notes after you logged in. You can see the public
                     notes below
                 </p>
-                <div className="button-div-home-page">
-                    <Link to="/sign-in" className="home-page-link-element">
-                        Sign in
-                    </Link>
-                    <Link to="/sign-up" className="home-page-link-element">
-                        Sign up
-                    </Link>
-                </div>
+                {!isAuthorized ? (
+                    <div className="button-div-home-page">
+                        <Link to="/sign-in" className="home-page-link-element">
+                            Sign in
+                        </Link>
+                        <Link to="/sign-up" className="home-page-link-element">
+                            Sign up
+                        </Link>
+                    </div>
+                ) : (
+                    <div className="button-div-home-page">
+                        <button
+                            onClick={async () => {
+                                await api.get("api/Auth/logout/");
+                                verifyAuth();
+                            }}
+                        >
+                            Log out
+                        </button>
+                    </div>
+                )}
                 <button onClick={handleTeszt}>Teszt</button>
             </div>
             <div className="home-page-notes-div">
@@ -80,7 +96,11 @@ function Home(): JSX.Element {
                             }}
                         >
                             <h3>Note: {note.title}</h3>
-                            <Note initial={note.content} />
+                            <Note
+                                initial={note.content}
+                                id={note.id}
+                                isPublic="true"
+                            />
                         </div>
                     ))}
             </div>
@@ -89,54 +109,3 @@ function Home(): JSX.Element {
 }
 
 export default Home;
-
-/*<Note
-                    initial={JSON.stringify([
-                        {
-                            type: "paragraph",
-                            children: [
-                                {
-                                    text: "asd dSAad",
-                                },
-                                {
-                                    text: "snklvd",
-                                    italic: true,
-                                },
-                                {
-                                    text: "skk kéA",
-                                },
-                                {
-                                    bold: true,
-                                    text: " lidsne o",
-                                },
-                                {
-                                    text: "f text in a p",
-                                },
-                                {
-                                    text: "aragra",
-                                    underline: true,
-                                },
-                                {
-                                    text: "ph. ",
-                                },
-                            ],
-                        },
-                        {
-                            type: "heading-one",
-                            children: [
-                                {
-                                    text: "dsa",
-                                },
-                            ],
-                        },
-                        {
-                            type: "paragraph",
-                            align: "right",
-                            children: [
-                                {
-                                    text: "ez egy teszt nem tom",
-                                },
-                            ],
-                        },
-                    ])}
-                /> */

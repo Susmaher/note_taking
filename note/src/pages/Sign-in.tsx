@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import api from "../ts/api";
+import { useAuth } from "../context/UseAuth";
 
 type SignInFormInputs = {
     username: string;
@@ -11,6 +12,7 @@ type SignInFormInputs = {
 function Sign_in(): JSX.Element {
     const navigate = useNavigate();
     const { register, handleSubmit } = useForm<SignInFormInputs>();
+    const { verifyAuth } = useAuth();
 
     const onSubmit = async (data: SignInFormInputs) => {
         const username = data.username;
@@ -21,8 +23,7 @@ function Sign_in(): JSX.Element {
                 password,
             });
             console.log(res);
-            localStorage.setItem("accessToken", res.data.accessToken);
-            localStorage.setItem("refreshToken", res.data.refreshToken);
+            verifyAuth();
 
             navigate("/");
         } catch (error) {
@@ -32,6 +33,7 @@ function Sign_in(): JSX.Element {
 
     return (
         <>
+            <h1>SIGN IN</h1>
             <div className="form-block">
                 <form className="input-area" onSubmit={handleSubmit(onSubmit)}>
                     <div className="input-field">
